@@ -181,7 +181,7 @@ nav {
 
 .projectimage1 {
     display: inline-block;
-    background-image: url(../../images-my-work/Project\ 1\ Image.png);
+    background-image: url(../images/);
     width: 258px;
     height: 258px;
     background-repeat: none;
