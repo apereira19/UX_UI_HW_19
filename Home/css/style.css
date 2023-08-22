@@ -1,0 +1,370 @@
+@font-face {
+    font-family: "Ayuga";
+    src: url("fonts/AyugaDEMO.ttf") format('truetype');
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.mainPage {
+    background-color: #F4B895;
+    height: 120vh;
+}
+.nav img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+.titleIntro {
+    display: block;
+    height: 30vh;
+    text-align: center;
+    margin-top: -5%;
+    z-index: 1;
+}
+
+.nav {
+    display: inline-block;
+    float: left;
+}
+
+.myName {
+    font-size: 12vh;
+    font-family: Ayuga;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+ul {
+    vertical-align: top;
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    vertical-align: top;
+    padding: 0 10px 0 10px;
+}
+
+button {
+    border-width: 0;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(0,0,0,0);
+    /* background-color:#F4B895; */
+}
+.aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 60%;
+    height: 30%;
+}
+
+.aboutMe img {
+    width: fit-content;
+}
+
+.inline-block {
+    text-align: right;
+}
+
+.bottomCluster {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-top: 5%;
+    align-items: center;
+    height: 25%;
+    gap: 40px;
+}
+
+.arrowImage {
+    align-items: center;
+}
+
+.Portfolio {
+    display: inline-block; 
+    text-align: left;
+    height: auto;
+}
+
+.downArrow {
+    display: inline-block;
+    height: 160px;
+    position: relative;
+    /* top: 500px;
+    left: 280px; */
+}
+
+.arrowImage {
+    animation: bouncingArrow .7s infinite; 
+}
+
+@keyframes bouncingArrow {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    to {
+      margin-top: 0px;
+    }
+}
+
+/*my work css copy paste*/
+.myWork {
+    background-color:#FDE5A2;
+    margin: 0 auto;
+    height: 750px;
+}
+
+.content {
+    font-size: 70px;
+    font-family: Ayuga;
+    text-align: left;
+    color: #3885AF;
+}
+
+.myWorkTitle{
+    margin: 0;
+    padding: 50px;
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.inline-block {
+text-align: right;
+}
+
+nav {
+    
+}
+
+.projectimages img {
+    display: inline-block;
+    justify-content: center;
+    width: 258px;
+    height: 258px;
+    margin: 20px;
+    border-radius: 258px;
+}
+
+.projectimage1 {
+    display: inline-block;
+    background-image: url(../../images-my-work/Project\ 1\ Image.png);
+    width: 258px;
+    height: 258px;
+    background-repeat: none;
+}
+.projectimage1:hover {
+    background-image: url(../../images-my-work/Project1Green.png);
+    background-position: cover;
+  }
+
+  .projectimage2 {
+    display: inline-block;
+    background-image: url(../../images-my-work/Project\ 2\ Image.png);
+    width: 258px;
+    height: 258px;
+}
+
+.projectimage2:hover {
+    background-image: url(../../images-my-work/Project2Orange.png);
+    background-position: cover;
+  }
+
+  .projectimage3 {
+    display: inline-block;
+    background-image: url(../../images-my-work/Project\ 3\ Image.png);
+    width: 258px;
+    height: 258px;
+}
+
+.projectimage3:hover {
+    background-image: url(../../images-my-work/Project3Blue.png);
+    background-position: cover;
+  }
+
+  .projectimages{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .projectimage1, .projectimage2, .projectimage3 {
+    padding: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /*mobile media query*/
+  @media only screen and (max-width: 600px) /*and(max-width: 480px) */{
+    .projectimages {
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }
+}
+
+
+/*my skills css copy paste*/
+
+.mySkillsSection {
+    background-image: url(../../images-my-skills/Skills\ +\ Resume\ Image.png);
+    /*background-repeat: no-repeat;*/
+}
+
+.mySkillsContent {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+}
+
+.UXUI {
+    
+    display: flex; 
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+.UX, .UI {
+    background-color: #CFD183;
+    /* padding: 41px 41px 118px 41px; */
+    /* height: 180px; */
+    width: 350px;
+    border-radius: 40px;
+    line-height: 150%;
+    color: black;
+    font-size: 20px;
+    height: 450px;
+}
+
+.UI ul li, .UX ul li {
+    font-size: 16px;
+}
+
+.UI ul, .UX ul {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    font-family: 'Inria Serif', serif;
+}
+
+button {
+    display: flex;
+    width: 190px;
+    height: 70px;
+    padding: 9px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #E5A99A;
+    border-width: 0;
+    font-size: 18px;
+}
+.clickresume {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.UX:hover {
+    background-color: #CFD183;
+    opacity: 0.8; 
+}
+
+.UI:hover {
+    background-color: #CFD183;
+    opacity: 0.8; 
+}
+
+button {
+    margin: auto;
+}
+
+.clickresume {
+    padding: 50px;
+}
+
+/*mobile media query*/
+  @media only screen and (min-width: 320px)
+{
+
+body {
+    background-image: url(../images/Mobile-My-Skills-Image.png);
+    background-size: cover;
+    background-color: rgba(253,229,162,70%)
+}
+
+.nav{
+    background-repeat: no-repeat;
+  }
+
+.UXUI {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 150px;
+}
+
+}
+
+/*desktop media query*/
+
+@media only screen and (min-width: 1000px){
+    body {
+        background-image: url(../images/Skills\ +\ Resume\ Image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }   
+
+    .UXUI {
+        display: flex; 
+        justify-content: space-evenly;
+        flex-direction: row;
+        gap: 200px;
+    }
+
+    
+}

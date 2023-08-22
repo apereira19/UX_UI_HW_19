@@ -1,0 +1,107 @@
+body {
+    background-color:#FDE5A2;
+    padding: 20px;
+}
+.nav img {
+    width: 60px;
+    height: 60px;
+}
+
+h1 {
+    font-size: 70px;
+    font-family: Ayuga;
+    text-align: left;
+    color: #3885AF;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.inline-block {
+text-align: right;
+}
+
+nav {
+    
+}
+
+.projectimages img {
+    display: inline-block;
+    justify-content: center;
+    width: 258px;
+    height: 258px;
+    margin: 20px;
+    border-radius: 258px;
+}
+
+.projectimage1 {
+    display: inline-block;
+    background-image: url(../../images/Project\ 1\ Image.png);
+    width: 258px;
+    height: 258px;
+    background-repeat: none;
+
+}
+.projectimage1:hover {
+    background-image: url(../../images/Project1Green.png);
+    background-position: cover;
+   
+  }
+
+  .projectimage2 {
+    display: inline-block;
+    background-image: url(../../images/Project\ 2\ Image.png);
+    width: 258px;
+    height: 258px;
+}
+
+.projectimage2:hover {
+    background-image: url(../../images/Project2Orange.png);
+    background-position: cover;
+  }
+
+  .projectimage3 {
+    display: inline-block;
+    background-image: url(../../images/Project\ 3\ Image.png);
+    width: 258px;
+    height: 258px;
+}
+
+.projectimage3:hover {
+    background-image: url(../../images/Project3Blue.png);
+    background-position: cover;
+  }
+
+  .projectimages{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .projectimage1, .projectimage2, .projectimage3 {
+    padding: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /*mobile media query*/
+  @media only screen and (max-width: 600px) /*and(max-width: 480px) */{
+    .projectimages {
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
+    }
+
+
+/*the media query briefly worked but still have some work to do to make it entirely responsive*/
+
+}
